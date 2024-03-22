@@ -4,17 +4,17 @@ import pyodbc
 import requests
  
 # Datadog API keys and query details
-datadog_api_key = '2d5aa834b783e13d3b31d4eb722ea172'
-datadog_app_key = 'b6661f078b18955cd5c3f671e176e15419ca8ec6'
+datadog_api_key = '###'
+datadog_app_key = '##'
 from_time = "now-1440m"
 to_time = "now"
 
 # Database configuration
 db_config = {
-    'server': '10.1.12.14',
+    'server': '3222',
     'database': 'PowerBI_Stage',
-    'user': 'pp_sveerla',
-    'password': '!Welcome@2023SV$$',
+    'user': 'pp_sva',
+    'password': 'ghghsdh',
     'driver': '{ODBC Driver 17 for SQL Server}',
     'table': 'Completed_Tasks'  
 }
@@ -59,10 +59,10 @@ payload = {
 
 
 db_config2 = {
-    'server': '10.1.12.14',
-    'database': 'PowerBI_Stage',
-    'user': 'pp_sveerla',
-    'password': '!Welcome@2023SV$$',
+    'server': '10.4',
+    'database': 'PowStage',
+    'user': 'pp_sla',
+    'password': '!3SV$$',
     'driver': '{ODBC Driver 17 for SQL Server}',
     'table': 'Completed_Tasks_List_Datadog'  
 }
