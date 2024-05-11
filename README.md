@@ -1,3 +1,26 @@
+# Project Summary:
+This project aims to fetch logs related to specific tasks from Datadog and store them in a SQL Server database for monitoring and analysis purposes. It involves querying Datadog's API to retrieve logs based on task names, parsing the JSON response, and inserting the log data into a database table.
+
+# Your Contributions:
+
+# Configuration Setup:
+You configured the Datadog API keys, database connection details, and defined the time range for log retrieval.
+# Database Interaction:
+You established connections to two separate SQL Server databases and executed SQL queries to retrieve task names and insert log data.
+# Datadog Integration:
+You constructed a query to filter logs from Datadog based on task names and sent a POST request to the Datadog API to fetch logs.
+# Data Processing:
+You parsed the JSON response from Datadog to extract relevant log attributes such as event ID, event type, service, and task name.
+# Data Insertion:
+You inserted the extracted log data into a table in the first database (Completed_Tasks) for storage and further analysis.
+# Additional SQL Script: 
+You formulated and executed an additional SQL script to process and insert data into another table in the second database (Completed_Tasks_List_Datadog).
+# Exception Handling:
+You implemented exception handling to manage errors that may occur during the execution of the script, ensuring smooth operation.
+# Database Connection Closure:
+You closed the database connections after the execution of the script to release resources and maintain efficiency.
+
+
 # Datadog Log Integration
 
 This project is a Python script designed to retrieve logs from Datadog, extract relevant information about scheduled tasks, and store that information in a SQL Server database. It utilizes the Datadog API for log retrieval and PyODBC for database interaction.
